@@ -19,7 +19,7 @@ jobs:
           name: dist
           path: dist
 
-      - name: Deploy site Azure
+      - name: Deploy site to Azure
         id: deploy
         uses: Azure/static-web-apps-deploy@v1
         with:
