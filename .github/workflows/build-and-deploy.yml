@@ -52,7 +52,13 @@ jobs:
           path: dist
           
       - name: Token presence check
-        run: test -n "${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}" || (echo "Token is empty"; exit 1)
+        run: |
+          if [ -n "${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}" ]; then
+            echo "✅ Deployment token is set and available."
+          else
+            echo "❌ Deployment token is missing or empty."
+            exit 1
+          fi
 
       - name: Deploy site to Azure
         id: deploy
@@ -66,4 +72,3 @@ jobs:
           app_location: "dist"
           api_location: ""
           output_location: ""
-  
