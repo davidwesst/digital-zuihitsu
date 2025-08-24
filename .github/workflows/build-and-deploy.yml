@@ -50,6 +50,9 @@ jobs:
         with:
           name: dist
           path: dist
+          
+      - name: Token presence check
+        run: test -n "${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}" || (echo "Token is empty"; exit 1)
 
       - name: Deploy site to Azure
         id: deploy
