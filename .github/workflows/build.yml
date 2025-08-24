@@ -3,6 +3,7 @@ name: Build
 on:
   push:
     branches:
+      - main
       - feature/build-workflow
   #pull_request:
   #  types: [opened, synchronize, reopened, closed]
