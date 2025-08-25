@@ -11,6 +11,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --side-width: 200px;
+  --default-spacing: 0.5rem;
 }
 
 a {
@@ -24,11 +27,39 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-left, .sidebar-right {
+  position: fixed;    /* sticks on vertical scroll */
+  top: 0;              /* stick to top of viewport */
+  width: var(--side-width);
+  padding: var(--default-spacing);
+  height: 100vh;      /* full viewport height */
+  place-content: center;
+}
+
+.sidebar-left { left: 0; }
+.sidebar-right { right: 0;}
+
+.widget {
+  text-align: center;;
+}
+
+.widget header {
+  font-weight: bold;
+}
+
+#siteNav ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 @media (prefers-color-scheme: light) {
