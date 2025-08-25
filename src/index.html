@@ -4,17 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
-    
+
     <title>david.wes.st | A Digital Zuihitsu by DW</title>
   </head>
   <body>
-    <header>
-      <h1>david.wes.st</h1>
-      <p>A Digital Zuihitsu by DW</p>
-    </header>
+    <section class="sidebar-left">
+      <hr />
+      <nav id="siteNav">
+        <ul>
+          <li><a href="/">Home</a></li>
+        </ul>
+        <ul>
+          <li><a href="https://davidwesst.com" target="_blank>">👨‍💻 My Day Job</a></li>
+          <li><a href="https://cocobokostudios.com" target="_blank>">🕹️ My Dream Job</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </section>
     <main>
+      <header>
+        <h1>david.wes.st</h1>
+        <p>A Digital Zuihitsu by DW</p>
+      </header>
       <img src="./assets/logo.png" alt="DW Logo" />
     </main>
+    <section class="sidebar-right">
+      <hr />
+      <section class="widget">
+        <header>
+          <span>My Local Time</span>
+        </header>
+        <time id="localTimeDisplay" datetime="2025-01-01T00:00:00-0500">00:00:00, January 1, 2025 </time>
+      </section>
+      <hr />
+    </section>
     <script type="module" src="./scripts/main.ts"></script>
   </body>
 </html>
