@@ -5,8 +5,8 @@ date: 2025-12-16T15:01:00-06:00
 game_ids:
     igdb_id: 305152
 play_data:
-    started_on: December 1, 2025
-    completed_on: December 1, 2025
+    started_on: November 22, 2025
+    completed_on: November 28, 2025
     platform: Steam
 rating:
     gameplay: 2
@@ -21,9 +21,9 @@ Dispatch is a narrative heavy episodic experience, telling the story of a former
 
 ## What I Didn't Like
 
-### Diffculty Spike
+### Diffculty Spike at Episode 4 (or so)
 
-This is an episodic adventure which I only started when all the episodes were out and avialable. As I started to feel like I was getting the hang of the mechanics, I started the next episode (I think it was episode 4) and got destroyed with the mechanics. 
+This is an episodic adventure which I only started when all the episodes were out and avialable. As I started to feel like I was getting the hang of the mechanics, I started the next episode (I think it was episode 4) and got destroyed with the mechanics.
 
 I figured it was my inability to play video games 😅, but I have heard from others that have played that that hit a similar spike.
 
@@ -57,7 +57,7 @@ That's not to say you need to be some kind of Dispatch pro to get the best endin
 
 ## The Conclusion
 
-This game was unexpected. Put on my radar through the Triple Click podcast and when I was looking for a game to play that wasn't too difficult-- yet would engage me and keep me interested. 
+This game was unexpected. Put on my radar through the Triple Click podcast and when I was looking for a game to play that wasn't too difficult-- yet would engage me and keep me interested.
 
 As much as I enjoyed this game, I am not convinced it isn't a one-hit-wonder. Like Telltale Studios before, I want to see if they repeat this. Maybe with a different leadership structure at AdHoc, I'm hoping they actually respect the work they put into their game and what quality actually means to their product.
 
