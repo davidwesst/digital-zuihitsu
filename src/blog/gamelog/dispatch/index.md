@@ -3,10 +3,10 @@
 title: "Dispatch"
 date: 2025-12-16T15:01:00-06:00
 game_ids:
-    igdb_id: 305152
+    igdb_id: 325609
 play_data:
     started_on: November 22, 2025
-    completed_on: November 28, 2025
+    completed_on: November 29, 2025
     platform: Steam
 rating:
     gameplay: 2
