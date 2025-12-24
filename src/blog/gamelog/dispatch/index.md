@@ -1,7 +1,7 @@
 ---
 
 title: "Dispatch"
-date: 2025-12-16T15:01:00-06:00
+date: 2025-12-16T15:01-06:00
 game_ids:
     igdb_id: 325609
 play_data:
