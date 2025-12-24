@@ -1,6 +1,6 @@
 ---
 
-title: "The Séance at Blake Manor"
+title: "The Séance of Blake Manor"
 date: 2025-12-17T16:57-06:00
 game_ids:
     igdb_id: 160036 
@@ -17,7 +17,9 @@ rating:
 
 ---
 
-Brief description of the game
+In Séance of Blake Manor you play as Declan Ward, a detective invited an unknown host to Blake Manor where a séance is scheduled to take place. Your mission: to find a guest who has gone missing. You arrive late into the evening, two days before the séance is scheduled to take place. 
+
+In the two days you need to not only find the missing guest, but also unravel the mysteries surrounding the other guests and the séance itself.
 
 ## What I Didn't Like
 
