@@ -29,25 +29,33 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  display: grid;
+  grid-template-columns: var(--side-width) minmax(0, 1fr) var(--side-width);
 }
 
 main {
+  grid-column: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: var(--default-spacing);
+  width: min(960px, 100%);
+  margin: 0 auto;
 }
 
 .sidebar-left, .sidebar-right {
-  position: fixed;    /* sticks on vertical scroll */
-  top: 0;              /* stick to top of viewport */
+  position: sticky;
+  top: 0;
   width: var(--side-width);
   padding: var(--default-spacing);
-  height: 100vh;      /* full viewport height */
+  height: 100vh;
+  display: grid;
   place-content: center;
+  align-self: start;
 }
 
-.sidebar-left { left: 0; }
-.sidebar-right { right: 0;}
+.sidebar-left { grid-column: 1; }
+.sidebar-right { grid-column: 3;}
 
 .widget {
   text-align: center;;
@@ -64,6 +72,62 @@ main {
 
 #siteNav .sub-nav {
   padding-left: 1rem;
+}
+
+.gamelog-header {
+  width: 100%;
+  display: grid;
+  gap: var(--default-spacing);
+  justify-items: center;
+  text-align: center;
+}
+
+.gamelog-meta {
+  display: grid;
+  gap: var(--default-spacing);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  width: 100%;
+}
+
+.gamelog-meta section {
+  padding: var(--default-spacing);
+  border-radius: 4px;
+  border: 1px solid currentColor;
+}
+
+.gamelog-play-data ul,
+.gamelog-rating ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.gamelog-play-data ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.gamelog-play-data li {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0;
+  text-align: center;
+}
+
+.gamelog-rating ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.gamelog-rating li {
+  display: flex;
+  justify-content: center;
+  padding: 0.25rem 0;
+  text-align: center;
+}
+
+.gamelog-meta .meta-label {
+  font-weight: 700;
 }
 
 @media (prefers-color-scheme: light) {
