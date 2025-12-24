@@ -29,25 +29,33 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  display: grid;
+  grid-template-columns: var(--side-width) minmax(0, 1fr) var(--side-width);
 }
 
 main {
+  grid-column: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: var(--default-spacing);
+  width: min(960px, 100%);
+  margin: 0 auto;
 }
 
 .sidebar-left, .sidebar-right {
-  position: fixed;    /* sticks on vertical scroll */
-  top: 0;              /* stick to top of viewport */
+  position: sticky;
+  top: 0;
   width: var(--side-width);
   padding: var(--default-spacing);
-  height: 100vh;      /* full viewport height */
+  height: 100vh;
+  display: grid;
   place-content: center;
+  align-self: start;
 }
 
-.sidebar-left { left: 0; }
-.sidebar-right { right: 0;}
+.sidebar-left { grid-column: 1; }
+.sidebar-right { grid-column: 3;}
 
 .widget {
   text-align: center;;
