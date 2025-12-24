@@ -74,6 +74,62 @@ main {
   padding-left: 1rem;
 }
 
+.gamelog-header {
+  width: 100%;
+  display: grid;
+  gap: var(--default-spacing);
+  justify-items: center;
+  text-align: center;
+}
+
+.gamelog-meta {
+  display: grid;
+  gap: var(--default-spacing);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  width: 100%;
+}
+
+.gamelog-meta section {
+  padding: var(--default-spacing);
+  border-radius: 4px;
+  border: 1px solid currentColor;
+}
+
+.gamelog-play-data ul,
+.gamelog-rating ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.gamelog-play-data ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.gamelog-play-data li {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0;
+  text-align: center;
+}
+
+.gamelog-rating ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.gamelog-rating li {
+  display: flex;
+  justify-content: center;
+  padding: 0.25rem 0;
+  text-align: center;
+}
+
+.gamelog-meta .meta-label {
+  font-weight: 700;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
