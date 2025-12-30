@@ -12,7 +12,7 @@ rating:
     gameplay: 3
     narrative: 1
     style: 2
-    sound: 3
+    sound: 2
     overall: 2
 
 ---
