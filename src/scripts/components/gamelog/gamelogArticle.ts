@@ -145,6 +145,6 @@ function buildRating(list: HTMLUListElement, label: string, value?: number): voi
   const labelSpan = document.createElement('span')
   labelSpan.className = 'meta-label'
   labelSpan.textContent = `${label}: `
-  li.append(labelSpan, `${value}/5`)
+  li.append(labelSpan, `${value}/3`)
   list.append(li)
 }
