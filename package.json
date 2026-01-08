@@ -10,9 +10,11 @@
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",
+    "@types/node": "^25.0.3",
     "js-yaml": "^4.1.0",
     "marked": "^17.0.1",
     "typescript": "~5.8.3",
-    "vite": "^7.1.2"
+    "vite": "^7.1.2",
+    "vite-plugin-imagemin": "^0.6.1"
   }
 }

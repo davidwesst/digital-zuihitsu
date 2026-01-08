@@ -8,6 +8,19 @@ export type DungeonlogEntry = {
   titleImage?: string
 }
 
+const dungeonlogAssets = import.meta.glob('/blog/dungeonlog/**/*.{png,jpg,jpeg,gif,webp,avif,svg}', {
+  query: '?url',
+  import: 'default',
+  eager: true,
+})
+
+const dungeonlogAssetMap = new Map<string, string>()
+
+for (const [filePath, url] of Object.entries(dungeonlogAssets)) {
+  const normalizedPath = filePath.replace(/\\/g, '/')
+  dungeonlogAssetMap.set(normalizedPath, url as string)
+}
+
 const dungeonlogFiles = import.meta.glob('/blog/dungeonlog/**/index.md', {
   query: '?raw',
   import: 'default',
@@ -41,6 +54,12 @@ export function getAllDungeonlogs(): DungeonlogEntry[] {
     if (b.date) return 1
     return a.title.localeCompare(b.title)
   })
+}
+
+export function resolveDungeonlogAssetUrl(assetPath: string): string | undefined {
+  const normalized = assetPath.replace(/\\/g, '/')
+  const key = normalized.startsWith('/') ? normalized : `/${normalized}`
+  return dungeonlogAssetMap.get(key)
 }
 
 type FrontMatter = {

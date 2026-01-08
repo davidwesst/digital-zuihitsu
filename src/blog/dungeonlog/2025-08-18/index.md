@@ -1,7 +1,7 @@
 ---
 date: 2025-08-18
 title: The Pachinko Gambit
-title_image: SessonRecap-Poster_2025-08-18.png
+title_image: SessionRecap-Poster_2025-08-18.png
 ---
 
 The jungle doesn't sleep.  

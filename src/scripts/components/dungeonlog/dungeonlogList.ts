@@ -1,5 +1,5 @@
 import { marked } from 'marked'
-import { getAllDungeonlogs } from './data'
+import { getAllDungeonlogs, resolveDungeonlogAssetUrl } from './data'
 
 class DungeonlogList extends HTMLElement {
   connectedCallback(): void {
@@ -107,11 +107,12 @@ function rewriteRelativeImagePaths(content: string, slug: string): string {
 }
 
 function buildAssetUrl(slug: string, assetPath: string): string {
-  if (isExternalUrl(assetPath) || assetPath.startsWith('/')) {
+  if (isExternalUrl(assetPath)) {
     return assetPath
   }
   const cleaned = assetPath.replace(/^\.\//, '')
-  return `/blog/dungeonlog/${slug}/${cleaned}`
+  const fullPath = assetPath.startsWith('/') ? assetPath : `/blog/dungeonlog/${slug}/${cleaned}`
+  return resolveDungeonlogAssetUrl(fullPath) ?? fullPath
 }
 
 function isExternalUrl(value: string): boolean {
