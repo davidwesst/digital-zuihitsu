@@ -5,6 +5,7 @@ import './components/localTime/localTime'
 import './components/gamelog/gamelogList'
 import './components/gamelog/gamelogArticle'
 import './components/dungeonlog/dungeonlogList'
+import './components/siteHeader/siteHeader'
 
 console.log('Well, aren\'t you a curious one? 😉')
 
