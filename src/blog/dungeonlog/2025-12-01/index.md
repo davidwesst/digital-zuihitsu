@@ -1,5 +1,5 @@
 ---
-date: 2025-12-01
+date: 2025-12-01T00:00-06:00
 title: When the Room Let Us Go
 title_image: 2025-12-01_Poster.png
 ---
