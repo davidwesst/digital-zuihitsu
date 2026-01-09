@@ -1,7 +1,8 @@
 ---
-date: 2025-11-17
+date: 2025-11-17T00:00-06:00
 title: The Room That Remembered Us
 title_image: 2025-11-17_Poster.png
+title_image_alt: "A hard-boiled fantasy noir poster: a trench-coat-wearing Dragonborn detective (Zaps) snarls through fog while swinging a lightning-charged greataxe at writhing snake abominations. Behind him, a calm firbolg puzzle-solver, a shady druid in sunglasses, a wide-eyed halfling with sentient bagpipes, and a cheerful spider-limbed warforged float in smoky grayscale shadows. The scene is moody, dramatic, and very aware that the world absolutely did not let them go."
 ---
 
 I’ve walked into dark rooms before. Alleyways in Cyre, interrogation basements, memories you don’t come back from.
