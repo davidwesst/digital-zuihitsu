@@ -1,7 +1,7 @@
 ---
 date: 2026-01-05T00:00-06:00
 title: The Thighs, the Stars, and the Scream
-title_image: 2025-01-05_Poster.png
+title_image: 2026-01-05_Poster.png
 title_image_alt: ""
 ---
 
