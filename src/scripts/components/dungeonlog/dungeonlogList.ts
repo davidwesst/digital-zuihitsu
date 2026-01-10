@@ -1,5 +1,5 @@
-import { marked } from 'marked'
 import { getAllDungeonlogs, resolveDungeonlogAssetUrl } from './data'
+import { renderMarkdown } from '../markdown'
 
 class DungeonlogList extends HTMLElement {
   connectedCallback(): void {
@@ -43,12 +43,9 @@ class DungeonlogList extends HTMLElement {
       }
 
       const { content, titleImage } = normalizeContent(entry.content, entry.slug, entry.titleImage)
-      const parsed = marked.parse(content)
-      const html = typeof parsed === 'string' ? parsed : ''
-
       const body = document.createElement('div')
       body.className = 'dungeonlog-content'
-      body.innerHTML = html
+      body.innerHTML = renderMarkdown(content)
 
       article.append(header)
 

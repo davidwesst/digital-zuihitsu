@@ -1,5 +1,5 @@
-import { marked } from 'marked'
 import { getGamelog } from './data'
+import { renderMarkdown } from '../markdown'
 import type { PlayData, Rating } from './data'
 
 class GamelogArticle extends HTMLElement {
@@ -28,10 +28,7 @@ class GamelogArticle extends HTMLElement {
     const heading = this.buildHeader(entry.title, entry.date, entry.playData, entry.rating)
 
     const article = document.createElement('article')
-    const parsed = marked.parse(entry.content)
-    const html = typeof parsed === 'string' ? parsed : ''
-
-    article.innerHTML = html
+    article.innerHTML = renderMarkdown(entry.content)
 
     this.append(heading, article)
   }

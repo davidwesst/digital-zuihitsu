@@ -14,9 +14,23 @@ class GamelogList extends HTMLElement {
       return
     }
 
-    const list = document.createElement('ul')
+    let currentYear: string | null = null
+    let currentList: HTMLUListElement | null = null
 
     logs.forEach((log) => {
+      const year = log.date ? String(new Date(log.date).getFullYear()) : 'Unknown'
+
+      if (year !== currentYear) {
+        const heading = document.createElement('h2')
+        heading.className = 'gamelog-year'
+        heading.textContent = year
+        this.append(heading)
+
+        currentList = document.createElement('ul')
+        this.append(currentList)
+        currentYear = year
+      }
+
       const listItem = document.createElement('li')
       const link = document.createElement('a')
 
@@ -36,10 +50,8 @@ class GamelogList extends HTMLElement {
         listItem.append(link)
       }
 
-      list.append(listItem)
+      currentList?.append(listItem)
     })
-
-    this.append(list)
   }
 }
 
