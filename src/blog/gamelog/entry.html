@@ -13,19 +13,21 @@
     </style>
   </head>
   <body data-page-ready="false">
+    <site-header></site-header>
     <section class="sidebar-left">
       <hr />
       <site-nav></site-nav>
       <hr />
-    </section>
-    <main>
-      <gamelog-article></gamelog-article>
-    </main>
-    <section class="sidebar-right">
-      <hr />
       <local-time-widget></local-time-widget>
       <hr />
     </section>
+    <main>
+      <section class="main-content">
+        <gamelog-article></gamelog-article>
+      </section>
+      <section class="sidebar-right">
+      </section>
+    </main>
     <script type="module" src="../../scripts/main.ts"></script>
   </body>
 </html>

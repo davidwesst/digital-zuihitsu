@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
 
-    <title>david.wes.st | Blog</title>
+    <title>david.wes.st | Blog > Dungeonlog</title>
     <style>
       body[data-page-ready='false'] {
         visibility: hidden;
@@ -24,14 +24,29 @@
     <main>
       <section class="main-content">
         <header>
-          <h1>Blog</h1>
-          <p>My thoughts on thing I play, read, and do.</p>
+          <h1>Dungeonlog</h1>
+          <p>Records of my adventures in Dungeons and Dragons as Zaps, the Dragonborn Barbarian in Ebberon.</p>
+          <h2>References</h2>
+          <nav>
+            <ul>
+              <li>
+                <a href="https://github.com/davidwesst/dnd" target="_blank" rel="noreferrer">
+                  My Campaign Notes (GitHub)
+                </a>
+              </li>
+            </ul>
+          </nav>
         </header>
-        <img src="./assets/logo.png" alt="DW Logo" />
+        <section>
+          <dungeonlog-list></dungeonlog-list>
+        </section>
       </section>
       <section class="sidebar-right">
+        <hr />
+        <dungeonlog-nav></dungeonlog-nav>
+        <hr />
       </section>
     </main>
-    <script type="module" src="./scripts/main.ts"></script>
+    <script type="module" src="../scripts/main.ts"></script>
   </body>
 </html>
