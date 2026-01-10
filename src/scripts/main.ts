@@ -5,6 +5,7 @@ import './components/localTime/localTime'
 import './components/gamelog/gamelogList'
 import './components/gamelog/gamelogArticle'
 import './components/dungeonlog/dungeonlogList'
+import './components/dungeonlog/dungeonlogNav'
 import './components/siteHeader/siteHeader'
 import './components/imageViewer/imageViewer'
 

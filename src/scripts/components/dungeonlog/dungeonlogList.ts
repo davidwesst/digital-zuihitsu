@@ -21,6 +21,7 @@ class DungeonlogList extends HTMLElement {
     entries.forEach((entry) => {
       const article = document.createElement('article')
       article.className = 'dungeonlog-entry'
+      article.id = `dungeonlog-${entry.slug}`
 
       const header = document.createElement('header')
       const title = document.createElement('h2')

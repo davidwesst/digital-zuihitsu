@@ -18,27 +18,35 @@
       <hr />
       <site-nav></site-nav>
       <hr />
-    </section>
-    <main>
-      <header>
-        <h1>Dungeonlog</h1>
-        <p>Records of my adventures in Dungeons and Dragons as Zaps, the Dragonborn Barbarian in Ebberon.</p>
-        <h2>References</h2>
-        <nav>
-            <ul>
-                <li><a href="https://github.com/davidwesst/dnd" target="_blank" rel="noreferrer">My Campaign Notes (GitHub)</a></li>
-            </ul>
-        </nav>
-      </header>
-      <section>
-        <dungeonlog-list></dungeonlog-list>
-      </section>
-    </main>
-    <section class="sidebar-right">
-      <hr />
       <local-time-widget></local-time-widget>
       <hr />
     </section>
+    <main>
+      <section class="main-content">
+        <header>
+          <h1>Dungeonlog</h1>
+          <p>Records of my adventures in Dungeons and Dragons as Zaps, the Dragonborn Barbarian in Ebberon.</p>
+          <h2>References</h2>
+          <nav>
+            <ul>
+              <li>
+                <a href="https://github.com/davidwesst/dnd" target="_blank" rel="noreferrer">
+                  My Campaign Notes (GitHub)
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <section>
+          <dungeonlog-list></dungeonlog-list>
+        </section>
+      </section>
+      <section class="sidebar-right">
+        <hr />
+        <dungeonlog-nav></dungeonlog-nav>
+        <hr />
+      </section>
+    </main>
     <script type="module" src="../scripts/main.ts"></script>
   </body>
 </html>
